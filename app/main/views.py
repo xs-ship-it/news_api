@@ -26,4 +26,3 @@ def articles(id):
 	title = f'News API > {id}'
 
 	return render_template('articles.html',title= title,articles = articles)
-

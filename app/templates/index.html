@@ -2,30 +2,31 @@
 {% import 'macros.html' as macro %}
 
 {% block content%}
-<body >
+
+<div class="container">
          <!-- Entertainment News Section  -->
          
-         <h3 > Top Entertainment News Sources</h3>
+         <h3> Top Entertainment News Sources</h3>
          <hr>
  
          {{ macro.displaySourceList(entertainment_sources)}}
 
          <!-- Sports News Section  -->
          
-        <h3> Top Sports News Sources</h3>
+        <h3 > Top Sports News Sources</h3>
         <hr>
 
         {{ macro.displaySourceList(sports_sources)}}
 
 		<!-- Business News Section  -->
-        <h3> Top Business News Sources</h3>
+        <h3  > Top Business News Sources</h3>
         <hr>
 
         {{ macro.displaySourceList(sources)}}
 
         <!-- Technology News Section  -->
          
-        <h3> Top Technology News Sources</h3>
+        <h3  > Top Technology News Sources</h3>
         <hr>
 
         {{ macro.displaySourceList(technology_sources)}}

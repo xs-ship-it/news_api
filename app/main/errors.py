@@ -1,5 +1,3 @@
-
-  
 from flask import render_template
 from . import main
 
@@ -8,4 +6,4 @@ def four_Ow_four(error):
 	'''
 	Function to render 404 error page
 	'''
-	return render_template('error.html'),404
+	return render_template('404.html'),404
