@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+{% block content %}
+<div class="jumbotron container-fluid">
+    <h1 class="text-center">NEWS SOURCES</h1>
+    <p class="intro text-center">Your global news source</p>
+</div>
+
+    <ul>
+        {{ macro.displaySourceList(news)}}
+    </ul>
+{% endblock %}
