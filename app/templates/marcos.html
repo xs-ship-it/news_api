@@ -1,0 +1,20 @@
+{% macro displaySourceList(source_list) %}
+    {% for source in source_list %}
+    
+            <li><a href="/news/{{source.id}}">{{source.name}}</a></li>
+            <p><cite class="">{{source.description}}</cite></p>
+    {% endfor %}
+{% endmacro %}
+
+
+{% macro displayArticleList(article_list) %}
+    {% for article in article_list %}
+        <li>title: {{article.title}}</li>
+        <p>desc: {{article.description}}</p>
+        <!-- <p>content: {{article.content}}</p> -->
+        <p>Published at: {{article.publishedAt}}</p>
+        <img src="{{article.urlToImage}}" alt="" style="width:500px">
+        <a href="{{article.url}}" target="_blank"><button class="btn btn-primary"> view story..</button></a>
+        
+    {% endfor %}
+{% endmacro %}
